@@ -15,6 +15,7 @@ def code(value):
 
     elif value == '#':
         # check pin
+        #here will be the update database function
 
         if pin == "3529":
             print("PIN OK")
