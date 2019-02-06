@@ -1,0 +1,20 @@
+import mysql.connector
+
+def update_statue(pin):
+
+ mydb= mysql.connctor(
+    host = "localhost"
+    user = "apostolis"
+    passwd = "123456789"
+    database = "emplyees"
+)
+ 
+ mycrusor = mydb.cursor()
+  sql = "SELECT * FROM employees WHERE password = %s"
+  
+  cursor.execute(sql, (pin))
+  if not cursor.rowcount:
+     print"Wrong Password access denied"
+  else:
+   updt = "UPDATE employees SET statue = IF(statue = enter, leave, IF statue = leave, enter) WHERE password = %S"
+   cursor.execute(updt, (pin))
