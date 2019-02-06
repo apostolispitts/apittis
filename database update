@@ -2,7 +2,7 @@ import mysql.connector
 
 def update_statue(pin):
 
- mydb= mysql.connctor(
+ mydb= mysql.connector(
     host = "localhost"
     user = "apostolis"
     passwd = "123456789"
